@@ -22,14 +22,6 @@ export function getImages(QUERY) {
         });
         return [];
       }
-
-      // const images = data.hits.slice(0, 3);
-
-      // document.body.innerHTML = images
-      //   .map(({ webformatURL }) => {
-      //     return `<img src="${webformatURL}">`;
-      //   })
-      //   .join('');
       return data;
 
     })

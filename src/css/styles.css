@@ -24,7 +24,26 @@
   -webkit-text-size-adjust: 100%;
 }
 
-/* TASK 2 */
-.fieldset {
-  width: fit-content;
+
+
+.gallery-item{
+  width: 260px;
+  border: 1px solid #000000;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+.card-place{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: center
+}
+
+.form{
+ display: flex;
+ justify-content: center;
+ gap: 12px;
 }

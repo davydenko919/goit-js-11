@@ -3,7 +3,6 @@ import iziToast from 'izitoast';
 const KEY = `42787384-4c627c93f7dff570902230658`;
 const BASE_URI = `https://pixabay.com/api/`;
 
-
 export function getImages(QUERY) {
   const LINK = `${BASE_URI}?key=${KEY}&q=${QUERY}`;
   return fetch(LINK)

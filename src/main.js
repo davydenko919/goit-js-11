@@ -22,7 +22,6 @@ form.addEventListener('submit', (event) => {
     // console.log(what)
     // console.log(getImages(QUERY));
     // console.log(createGallery(getImages(QUERY)));
-    // cardPlace.innerHTML = createGallery(getImages(QUERY));
     getImages(QUERY)
     .then(arr => {
         cardPlace.innerHTML = createGallery(arr);

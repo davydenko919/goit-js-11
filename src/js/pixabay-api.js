@@ -2,10 +2,10 @@ import iziToast from 'izitoast';
 
 const KEY = `42787384-4c627c93f7dff570902230658`;
 const BASE_URI = `https://pixabay.com/api/`;
-// let QUERY = 'forest+mountains+ADFVFAWSVA+ADFAFDADF';
+
 
 export function getImages(QUERY) {
-  const LINK = `${BASE_URI}?key=${KEY}&q=${QUERY}&image_type=photo&orientation=horizontal&savesearch=true`;
+  const LINK = `${BASE_URI}?key=${KEY}&q=${QUERY}`;
   return fetch(LINK)
     .then(response => {
       if (!response.ok) {

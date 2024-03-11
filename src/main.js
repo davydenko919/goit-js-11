@@ -23,6 +23,7 @@ form.addEventListener('submit', (event) => {
             message:
               'Sorry, there are no images matching your search query. Please try again!',
           });
+          loader.style.display = 'none';
       } else {
         cardPlace.innerHTML = createGallery(arr);
         lightbox.refresh();

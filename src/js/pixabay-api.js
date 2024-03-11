@@ -15,10 +15,7 @@ export function getImages(QUERY) {
     })
     .then(data => {
       if (data.hits.length === 0) {
-        // iziToast.error({
-        //   message:
-        //     'Sorry, there are no images matching your search query. Please try again!',
-        // });
+        
         return [];
       }
       return data;

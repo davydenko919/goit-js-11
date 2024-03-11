@@ -18,10 +18,18 @@ form.addEventListener('submit', (event) => {
     const QUERY = input.value.trim().toLowerCase().replace(/ /g, "+");
     getImages(QUERY)
     .then(arr => {
+      if (arr.length === 0) {
+        iziToast.error({
+            message:
+              'Sorry, there are no images matching your search query. Please try again!',
+          });
+      } else {
         cardPlace.innerHTML = createGallery(arr);
         lightbox.refresh();
         form.reset();
         loader.style.display = 'none';
+      }
+       
       })
       .catch(error => {
         iziToast.error({
